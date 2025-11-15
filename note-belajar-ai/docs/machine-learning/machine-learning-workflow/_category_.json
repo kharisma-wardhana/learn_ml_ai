@@ -1,0 +1,8 @@
+{
+    "label": "Machine Learning Workflow",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Machine learning workflow berisikan tahapan-tahapan yang perlu dilalui sebelum project tersebut bisa diimplementasikan di tahap produksi."
+    }
+}
