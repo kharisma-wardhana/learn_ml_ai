@@ -14,49 +14,33 @@ Machine Learning merupakan cabang ilmu yang memungkinkan komputer belajar dan be
 ## Komponen Utama Machine Learning
 Berikut adalah komponen utama dalam machine learning yang penting untuk membangun model yang efektif:
 - Dataset (Data)
+  : Data merupakan bahan dasar utama untuk machine learning. Tanpa data, model tidak dapat dilatih. Data sendiri terdiri dari feature (attribute) dan label (hasil yang ingin diprediksi).
 - Model
+  : Model adalah algoritma matematis yang digunakan untuk mempelajari sebuah pola dari data. Ex: model regresi linier atau decision tree.
 - Algoritma Training
+  : Algoritma adalah metode yang digunakan untuk melatih model dengan data. Algoritma menentukan cara model belajar dari data dan mengoptimalkan prosesnya.
 - Feature Engineering
+  : Feature engineering adalah proses mengubah data mentah menjadi feature (attribute) yang lebih relevan dan informatif untuk model. Ini termasuk pemilihan dan pembuatan feature baru.
 - Training
+  : Training adalah proses belajar model terhadap data. Model mempengaruhi parameter untuk meminimalisir kesalahan dan meningkatkan akurasi.
 - Evaluation
+  : Evaluation adalah proses menilai kinerja model menggunakan data yang digunakan selama pelatihan. Ini melibatkan metrik evaluasi: 
+    ```plaintext
+    Klasifikasi: 
+    - Accuracy
+    - Precission
+    - Recall
+    - F1-Score
+    - ROC-AUC
+
+    Regresi:
+    - RMSE
+    - MAE
+    ```
 - Hyperparameter Tuning
+  : Hyperparameter tuning adalah proses mengoptimalkan parameter di luar model yang berpengaruh pada kinerja model. Ini dilakukan untuk meningkatkan accuracy model. Ex: learning rate, jumlah tree di Random Forest, jumlah layer di neural network, jumlah cluster (K) di K-Means.
 - Deployment
-
-### Dataset (Data)
-Data merupakan bahan dasar utama untuk machine learning. Tanpa data, model tidak dapat dilatih. Data sendiri terdiri dari feature (attribute) dan label (hasil yang ingin diprediksi).
-
-### Model
-Model adalah algoritma matematis yang digunakan untuk mempelajari sebuah pola dari data. Ex: model regresi linier atau decision tree.
-
-### Algoritma Training
-Algoritma adalah metode yang digunakan untuk melatih model dengan data. Algoritma menentukan cara model belajar dari data dan mengoptimalkan prosesnya.
-
-### Feature Engineering
-Feature engineering adalah proses mengubah data mentah menjadi feature (attribute) yang lebih relevan dan informatif untuk model. Ini termasuk pemilihan dan pembuatan feature baru.
-
-### Training 
-Training adalah proses belajar model terhadap data. Model mempengaruhi parameter untuk meminimalisir kesalahan dan meningkatkan akurasi.
-
-### Evaluation
-Evaluation adalah proses menilai kinerja model menggunakan data yang digunakan selama pelatihan. Ini melibatkan metrik evaluasi: 
-```plaintext
-Klasifikasi: 
-- Accuracy
-- Precission
-- Recall
-- F1-Score
-- ROC-AUC
-
-Regresi:
-- RMSE
-- MAE
-```
-
-### Hyperparameter Tuning
-Hyperparameter tuning adalah proses mengoptimalkan parameter di luar model yang berpengaruh pada kinerja model. Ini dilakukan untuk meningkatkan accuracy model. Ex: learning rate, jumlah tree di Random Forest, jumlah layer di neural network, jumlah cluster (K) di K-Means.
-
-### Deployment
-Deployment adalah tahap akhir dari model yang telah dilatih
+  : Deployment adalah tahap akhir dari model yang telah dilatih
 
 ## Jenis - jenis Machine Learning
 Berikut adalah beberapa jenis machine learning:
@@ -91,7 +75,7 @@ Reinforcement learning berfokus pada cara agent belajar mengambil tindakan untuk
 - **Methode SMART**: Menetapkan tujuan specific, terukur, dapat dicapai, relevan, dan terikat waktu.
 ![metode-smart](image-2.png)
     - **Specific**: tujuan harus jelas dan specific sehingga semua orang yang terlibat memahami hal yang ingin dicapai. 
-      - Tujuan yang specific artinya mampu menjawab pertanyaan berikut:
+      : Tujuan yang specific artinya mampu menjawab pertanyaan berikut:
         -  Apa yang ingin dicapai ?
         -  Mengapa tujuan ini penting ?
         -  Siapa yang terlibat ?
@@ -168,7 +152,7 @@ Reinforcement learning berfokus pada cara agent belajar mengambil tindakan untuk
   - Kriteria Evaluasi:
     - Mean Squared Error (MSE)
     - Mean Absolute Error (MAE)
-    - R-squared(R2) Score
+    - R-squared(R^2^) Score
 
 - **Clustering**: mengelompokkan data berdasarkan kesamaan karakteristik tanpa label (ex: segmentasi pelanggan)
   - Algoritma:
