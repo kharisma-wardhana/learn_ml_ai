@@ -55,15 +55,15 @@ Jenis data yang tidak memiliki format atau struktur yang jelas. Data ini cenderu
 ![data-tidak-terstruktur](image-7.png)
 
 ## Masalah dalam Data
-Permasalahan yang biasanya terjadi pada data biasanya disebabkan oleh ==kesalahan ketika pengumpulan atau pencatatan data==. Data yang didapat dengan cara yang salah atau bahkan dari sumber yang tidak dapat dipercaya juga bisa disebut sebagai **data sampah**.
+Permasalahan yang biasanya terjadi pada data biasanya disebabkan oleh **kesalahan ketika pengumpulan atau pencatatan data**. Data yang didapat dengan cara yang salah atau bahkan dari sumber yang tidak dapat dipercaya juga bisa disebut sebagai **data sampah**.
 
 Permalasahan umum yang terjadi terdapat pada kualitas data diantaranya, seperti:
-- Data yang tidak relevan(*irrelevant*)
+- Data yang tidak relevan (*irrelevant*)
 - Data yang berbeda dengan yang lain (*outlier*)
 - Data duplikat
-- Data kosong (*NULL*)
-- Data yang tidak benar, etc.
+- Data kosong (*null*)
+- Data yang tidak benar, *etc*.
 
 Jika menemui data kosong, kita dapat menanganinya dengan beberapa cara:
-- Menghapus data yang kosong 
+- Menghapus data yang kosong
 - Mengisi data kosong dengan nilai median/rata-rata jika datanya berupa numerik

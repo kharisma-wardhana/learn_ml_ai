@@ -12,3 +12,17 @@ Algoritma machine learning dapat mencari pola tertentu dari sekumpulan data. Ia 
 ## Tipe - Tipe Machine Learning
 
 ![tipe-machine-learning](image-8.png)
+
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+
+## Machine Learning Workflow
+
+![machine-learning-workflow](image-9.png)
+
+- Pengumpulan Data
+- Data Processing
+- Model Development
+- Model Evaluation
+- Deployment
