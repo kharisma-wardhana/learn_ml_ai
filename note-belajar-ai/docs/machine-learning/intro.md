@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Machine Learning 
 
+![taksonomi-ai](image-6.png)
+
 ## Pengenalan Machine Learning
 
 *"A field of study that gives computers the ability to learn without being explicitly programmed."*
