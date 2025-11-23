@@ -27,15 +27,31 @@ Berikut adalah komponen utama dalam machine learning yang penting untuk membangu
   : Evaluation adalah proses menilai kinerja model menggunakan data yang digunakan selama pelatihan. Ini melibatkan metrik evaluasi: 
     ```plaintext
     Klasifikasi: 
-    - Accuracy
-    - Precission
-    - Recall
-    - F1-Score
-    - ROC-AUC
+    - Accuracy: dihitung sebagai proporsi dari prediksi benar (baik positif maupun negatif) terhadap seluruh prediksi yang dilakukan oleh model.
+
+    - Precission: mengukur seberapa baik model menghindari positif palsu (false positives, FP). Ini adalah rasio prediksi positif yang benar terhadap semua prediksi positif yang dibuat oleh model.
+
+    - Recall: mengukur seberapa baik model dapat menangkap semua contoh positif. Ini adalah rasio prediksi positif yang benar terhadap semua kasus positif yang sebenarnya ada dalam data.
+
+    - F1-Score: menggabungkan presisi dan recall menjadi satu nilai tunggal yang mempertimbangkan keduanya. F1-Score adalah rata-rata harmonis dari presisi dan recall, memberikan gambaran yang lebih baik ketika ada trade-off antara keduanya
+
+    - ROC-AUC: mengukur seberapa baik model dapat membedakan kelas-kelas yang ada dari keseluruhan data dan menyortir kasus positif dari kasus negatif tanpa harus bergantung pada satu batasan (threshold). Ini merangkum kinerja model dari keseluruhan threshold yang ada pada kasus klasifikasi.
 
     Regresi:
-    - RMSE
-    - MAE
+    - Root Mean Squared Error (RMSE): nilai akar kuadrat dari rata-rata yang mengembalikan kesalahan ke dalam satuan yang sama dengan data sehingga lebih mudah diinterpretasikan.
+
+    - Mean Absolute Error (MAE): rata-rata kesalahan dengan nilai absolut antara nilai sebenarnya dan nilai prediksi.
+
+    - Mean Squared Error (MSE): nilai rata-rata dari kuadrat kesalahan antara nilai sebenarnya dan nilai prediksi.
+
+    - Mean Absolute Percentage Error (MAPE): nilai persentase dari rata-rata kesalahan absolut (MAE).
+
+    - Nilai Determinasi (R-squared/R^2): metrik yang memberikan ukuran proporsi variasi dalam variabel dependen (output) yang dapat dijelaskan oleh variabel independen (input) dalam model. R-squared dihitung dengan menggunakan perbandingan antara variasi total dalam data dan variasi yang dapat dijelaskan oleh model regresi.
+
+    Clustering:
+    - Silhouette Score: mengukur seberapa baik setiap data point diklasifikasikan dalam cluster-nya sendiri dibandingkan dengan cluster lain. Nilai ini memberikan informasi tentang kualitas clustering dengan memperhitungkan kepadatan dan jarak antar cluster.
+
+    - Within-Cluster Sum of Squares (WCSS): mengukur total jarak kuadrat antara titik data dan centroid-nya dalam cluster. Metrik ini sering digunakan untuk menilai seberapa baik data dikelompokkan dalam cluster.
     ```
 - Hyperparameter Tuning
   : Hyperparameter tuning adalah proses mengoptimalkan parameter di luar model yang berpengaruh pada kinerja model. Ini dilakukan untuk meningkatkan accuracy model. Ex: learning rate, jumlah tree di Random Forest, jumlah layer di neural network, jumlah cluster (K) di K-Means.
